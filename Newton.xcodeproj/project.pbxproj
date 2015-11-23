@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		399B54C01BB77F69001F85A5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399B54BF1BB77F69001F85A5 /* main.cpp */; };
+		391C87F91BC1CBE200F63151 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 391C87F71BC1CBE200F63151 /* matrix.cpp */; };
+		391C87FB1BC1CBFB00F63151 /* kepler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 391C87FA1BC1CBFB00F63151 /* kepler.cpp */; };
+		399B54D31BB78AFA001F85A5 /* test_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399B54D21BB78AFA001F85A5 /* test_newton.cpp */; };
+		399B54D71BB7B20F001F85A5 /* newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399B54D61BB7B20F001F85A5 /* newton.cpp */; };
+		399BD6751BB9C4B000CC6092 /* fd_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399BD6741BB9C4B000CC6092 /* fd_newton.cpp */; };
+		399BD6771BB9E3EE00CC6092 /* test_fd_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 399BD6761BB9E3EE00CC6092 /* test_fd_newton.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		391C87F71BC1CBE200F63151 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		391C87F81BC1CBE200F63151 /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		391C87FA1BC1CBFB00F63151 /* kepler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kepler.cpp; sourceTree = "<group>"; };
 		399B54BC1BB77F69001F85A5 /* Newton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Newton; sourceTree = BUILT_PRODUCTS_DIR; };
-		399B54BF1BB77F69001F85A5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		399B54C81BB78045001F85A5 /* fcn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fcn.hpp; sourceTree = "<group>"; };
+		399B54D21BB78AFA001F85A5 /* test_newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_newton.cpp; sourceTree = "<group>"; };
+		399B54D61BB7B20F001F85A5 /* newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = newton.cpp; sourceTree = "<group>"; };
+		399BD6741BB9C4B000CC6092 /* fd_newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fd_newton.cpp; sourceTree = "<group>"; };
+		399BD6761BB9E3EE00CC6092 /* test_fd_newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_fd_newton.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,14 @@
 		399B54BE1BB77F69001F85A5 /* Newton */ = {
 			isa = PBXGroup;
 			children = (
-				399B54BF1BB77F69001F85A5 /* main.cpp */,
+				399B54D61BB7B20F001F85A5 /* newton.cpp */,
+				391C87FA1BC1CBFB00F63151 /* kepler.cpp */,
+				399B54D21BB78AFA001F85A5 /* test_newton.cpp */,
+				399B54C81BB78045001F85A5 /* fcn.hpp */,
+				399BD6741BB9C4B000CC6092 /* fd_newton.cpp */,
+				391C87F71BC1CBE200F63151 /* matrix.cpp */,
+				391C87F81BC1CBE200F63151 /* matrix.hpp */,
+				399BD6761BB9E3EE00CC6092 /* test_fd_newton.cpp */,
 			);
 			path = Newton;
 			sourceTree = "<group>";
@@ -118,7 +137,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399B54C01BB77F69001F85A5 /* main.cpp in Sources */,
+				391C87F91BC1CBE200F63151 /* matrix.cpp in Sources */,
+				399B54D71BB7B20F001F85A5 /* newton.cpp in Sources */,
+				399B54D31BB78AFA001F85A5 /* test_newton.cpp in Sources */,
+				399BD6771BB9E3EE00CC6092 /* test_fd_newton.cpp in Sources */,
+				391C87FB1BC1CBFB00F63151 /* kepler.cpp in Sources */,
+				399BD6751BB9C4B000CC6092 /* fd_newton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +256,7 @@
 				399B54C51BB77F69001F85A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
